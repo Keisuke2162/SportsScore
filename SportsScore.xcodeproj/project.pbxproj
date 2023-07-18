@@ -16,6 +16,8 @@
 		E7EA8A102A66D1EB00EBFF84 /* SportsScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EA8A0F2A66D1EB00EBFF84 /* SportsScoreTests.swift */; };
 		E7EA8A1A2A66D1EB00EBFF84 /* SportsScoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EA8A192A66D1EB00EBFF84 /* SportsScoreUITests.swift */; };
 		E7EA8A1C2A66D1EB00EBFF84 /* SportsScoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EA8A1B2A66D1EB00EBFF84 /* SportsScoreUITestsLaunchTests.swift */; };
+		E7EA8A2A2A66D2BC00EBFF84 /* APIKit in Frameworks */ = {isa = PBXBuildFile; productRef = E7EA8A292A66D2BC00EBFF84 /* APIKit */; };
+		E7EA8A332A66E88E00EBFF84 /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EA8A322A66E88E00EBFF84 /* Fixture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		E7EA8A152A66D1EB00EBFF84 /* SportsScoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportsScoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7EA8A192A66D1EB00EBFF84 /* SportsScoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsScoreUITests.swift; sourceTree = "<group>"; };
 		E7EA8A1B2A66D1EB00EBFF84 /* SportsScoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsScoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E7EA8A322A66E88E00EBFF84 /* Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixture.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7EA8A2A2A66D2BC00EBFF84 /* APIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +103,8 @@
 		E7EA89F72A66D1E900EBFF84 /* SportsScore */ = {
 			isa = PBXGroup;
 			children = (
-				E7EA89F82A66D1E900EBFF84 /* AppDelegate.swift */,
+				E7EA8A2C2A66DE5E00EBFF84 /* ReSource */,
+				E7EA8A2B2A66DE5600EBFF84 /* Source */,
 				E7EA89FA2A66D1E900EBFF84 /* SceneDelegate.swift */,
 				E7EA89FC2A66D1E900EBFF84 /* ViewController.swift */,
 				E7EA89FE2A66D1E900EBFF84 /* Main.storyboard */,
@@ -127,6 +132,62 @@
 			path = SportsScoreUITests;
 			sourceTree = "<group>";
 		};
+		E7EA8A2B2A66DE5600EBFF84 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E7EA8A312A66DED100EBFF84 /* API */,
+				E7EA8A302A66DEC100EBFF84 /* Entities */,
+				E7EA8A2F2A66DE8400EBFF84 /* Views */,
+				E7EA8A2E2A66DE7800EBFF84 /* ViewModels */,
+				E7EA8A2D2A66DE6900EBFF84 /* ViewControllers */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		E7EA8A2C2A66DE5E00EBFF84 /* ReSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ReSource;
+			sourceTree = "<group>";
+		};
+		E7EA8A2D2A66DE6900EBFF84 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E7EA8A2E2A66DE7800EBFF84 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E7EA8A2F2A66DE8400EBFF84 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E7EA89F82A66D1E900EBFF84 /* AppDelegate.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E7EA8A302A66DEC100EBFF84 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E7EA8A322A66E88E00EBFF84 /* Fixture.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E7EA8A312A66DED100EBFF84 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +204,9 @@
 			dependencies = (
 			);
 			name = SportsScore;
+			packageProductDependencies = (
+				E7EA8A292A66D2BC00EBFF84 /* APIKit */,
+			);
 			productName = SportsScore;
 			productReference = E7EA89F52A66D1E900EBFF84 /* SportsScore.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +279,9 @@
 				Base,
 			);
 			mainGroup = E7EA89EC2A66D1E800EBFF84;
+			packageReferences = (
+				E7EA8A282A66D2BC00EBFF84 /* XCRemoteSwiftPackageReference "APIKit" */,
+			);
 			productRefGroup = E7EA89F62A66D1E900EBFF84 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,6 +328,7 @@
 				E7EA89FD2A66D1E900EBFF84 /* ViewController.swift in Sources */,
 				E7EA89F92A66D1E900EBFF84 /* AppDelegate.swift in Sources */,
 				E7EA89FB2A66D1E900EBFF84 /* SceneDelegate.swift in Sources */,
+				E7EA8A332A66E88E00EBFF84 /* Fixture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +670,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E7EA8A282A66D2BC00EBFF84 /* XCRemoteSwiftPackageReference "APIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ishkawa/APIKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E7EA8A292A66D2BC00EBFF84 /* APIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7EA8A282A66D2BC00EBFF84 /* XCRemoteSwiftPackageReference "APIKit" */;
+			productName = APIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E7EA89ED2A66D1E800EBFF84 /* Project object */;
 }
