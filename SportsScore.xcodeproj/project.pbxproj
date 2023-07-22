@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E71B41372A6C4D3700016C4C /* Action in Frameworks */ = {isa = PBXBuildFile; productRef = E71B41362A6C4D3700016C4C /* Action */; };
+		E71B413A2A6C4D8100016C4C /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E71B41392A6C4D8100016C4C /* RxCocoa */; };
+		E71B413C2A6C4D8100016C4C /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E71B413B2A6C4D8100016C4C /* RxSwift */; };
+		E71B413F2A6C4EF000016C4C /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = E71B413E2A6C4EF000016C4C /* Quick */; };
+		E71B41422A6C4F2000016C4C /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = E71B41412A6C4F2000016C4C /* Nimble */; };
+		E71B41452A6C4F5C00016C4C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E71B41442A6C4F5C00016C4C /* Kingfisher */; };
+		E71B41482A6C4FCF00016C4C /* Willow in Frameworks */ = {isa = PBXBuildFile; productRef = E71B41472A6C4FCF00016C4C /* Willow */; };
+		E71B414B2A6C500700016C4C /* Parchment in Frameworks */ = {isa = PBXBuildFile; productRef = E71B414A2A6C500700016C4C /* Parchment */; };
 		E7EA89F92A66D1E900EBFF84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EA89F82A66D1E900EBFF84 /* AppDelegate.swift */; };
 		E7EA89FB2A66D1E900EBFF84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EA89FA2A66D1E900EBFF84 /* SceneDelegate.swift */; };
 		E7EA89FD2A66D1E900EBFF84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EA89FC2A66D1E900EBFF84 /* ViewController.swift */; };
@@ -59,6 +67,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E71B413A2A6C4D8100016C4C /* RxCocoa in Frameworks */,
+				E71B413F2A6C4EF000016C4C /* Quick in Frameworks */,
+				E71B41452A6C4F5C00016C4C /* Kingfisher in Frameworks */,
+				E71B414B2A6C500700016C4C /* Parchment in Frameworks */,
+				E71B41372A6C4D3700016C4C /* Action in Frameworks */,
+				E71B41482A6C4FCF00016C4C /* Willow in Frameworks */,
+				E71B41422A6C4F2000016C4C /* Nimble in Frameworks */,
+				E71B413C2A6C4D8100016C4C /* RxSwift in Frameworks */,
 				E7EA8A2A2A66D2BC00EBFF84 /* APIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +222,14 @@
 			name = SportsScore;
 			packageProductDependencies = (
 				E7EA8A292A66D2BC00EBFF84 /* APIKit */,
+				E71B41362A6C4D3700016C4C /* Action */,
+				E71B41392A6C4D8100016C4C /* RxCocoa */,
+				E71B413B2A6C4D8100016C4C /* RxSwift */,
+				E71B413E2A6C4EF000016C4C /* Quick */,
+				E71B41412A6C4F2000016C4C /* Nimble */,
+				E71B41442A6C4F5C00016C4C /* Kingfisher */,
+				E71B41472A6C4FCF00016C4C /* Willow */,
+				E71B414A2A6C500700016C4C /* Parchment */,
 			);
 			productName = SportsScore;
 			productReference = E7EA89F52A66D1E900EBFF84 /* SportsScore.app */;
@@ -281,6 +305,13 @@
 			mainGroup = E7EA89EC2A66D1E800EBFF84;
 			packageReferences = (
 				E7EA8A282A66D2BC00EBFF84 /* XCRemoteSwiftPackageReference "APIKit" */,
+				E71B41352A6C4D3700016C4C /* XCRemoteSwiftPackageReference "Action" */,
+				E71B41382A6C4D8100016C4C /* XCRemoteSwiftPackageReference "RxSwift" */,
+				E71B413D2A6C4EEF00016C4C /* XCRemoteSwiftPackageReference "Quick" */,
+				E71B41402A6C4F2000016C4C /* XCRemoteSwiftPackageReference "Nimble" */,
+				E71B41432A6C4F5C00016C4C /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				E71B41462A6C4FCF00016C4C /* XCRemoteSwiftPackageReference "Willow" */,
+				E71B41492A6C500700016C4C /* XCRemoteSwiftPackageReference "Parchment" */,
 			);
 			productRefGroup = E7EA89F62A66D1E900EBFF84 /* Products */;
 			projectDirPath = "";
@@ -672,17 +703,113 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E71B41352A6C4D3700016C4C /* XCRemoteSwiftPackageReference "Action" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/Action.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.0;
+			};
+		};
+		E71B41382A6C4D8100016C4C /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.6.0;
+			};
+		};
+		E71B413D2A6C4EEF00016C4C /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				kind = exactVersion;
+				version = 7.0.0;
+			};
+		};
+		E71B41402A6C4F2000016C4C /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble";
+			requirement = {
+				kind = exactVersion;
+				version = 11.2.1;
+			};
+		};
+		E71B41432A6C4F5C00016C4C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = exactVersion;
+				version = 7.8.1;
+			};
+		};
+		E71B41462A6C4FCF00016C4C /* XCRemoteSwiftPackageReference "Willow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Nike-Inc/Willow.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.1.0;
+			};
+		};
+		E71B41492A6C500700016C4C /* XCRemoteSwiftPackageReference "Parchment" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rechsteiner/Parchment.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.2.1;
+			};
+		};
 		E7EA8A282A66D2BC00EBFF84 /* XCRemoteSwiftPackageReference "APIKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ishkawa/APIKit";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
+				kind = exactVersion;
+				version = 5.4.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E71B41362A6C4D3700016C4C /* Action */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E71B41352A6C4D3700016C4C /* XCRemoteSwiftPackageReference "Action" */;
+			productName = Action;
+		};
+		E71B41392A6C4D8100016C4C /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E71B41382A6C4D8100016C4C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		E71B413B2A6C4D8100016C4C /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E71B41382A6C4D8100016C4C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		E71B413E2A6C4EF000016C4C /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E71B413D2A6C4EEF00016C4C /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		E71B41412A6C4F2000016C4C /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E71B41402A6C4F2000016C4C /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		E71B41442A6C4F5C00016C4C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E71B41432A6C4F5C00016C4C /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		E71B41472A6C4FCF00016C4C /* Willow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E71B41462A6C4FCF00016C4C /* XCRemoteSwiftPackageReference "Willow" */;
+			productName = Willow;
+		};
+		E71B414A2A6C500700016C4C /* Parchment */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E71B41492A6C500700016C4C /* XCRemoteSwiftPackageReference "Parchment" */;
+			productName = Parchment;
+		};
 		E7EA8A292A66D2BC00EBFF84 /* APIKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E7EA8A282A66D2BC00EBFF84 /* XCRemoteSwiftPackageReference "APIKit" */;
